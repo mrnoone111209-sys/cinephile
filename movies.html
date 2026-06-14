@@ -1,48 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cinephile - Movies</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cinephile - Movies</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:0;
+    background:#141414;
+    color:white;
+}
+
+header{
+    background:#000;
+    padding:20px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-size:18px;
+}
+
+h1,h2{
+    text-align:center;
+}
+
+.movie-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    padding:30px;
+}
+
+.movie-card{
+    background:#222;
+    border-radius:10px;
+    overflow:hidden;
+    text-align:center;
+    transition:0.3s;
+}
+
+.movie-card:hover{
+    transform:scale(1.05);
+}
+
+.movie-card img{
+    width:100%;
+    height:380px;
+    object-fit:cover;
+}
+
+.movie-info{
+    padding:15px;
+}
+
+.rating{
+    color:gold;
+    font-weight:bold;
+}
+</style>
+
 </head>
 <body>
 
-    <header>
-        <h1>Cinephile</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="movies.html">Movies</a>
-        </nav>
-    </header>
+<header>
+    <h1>🎬 Cinephile</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="movies.html">Movies</a>
+    </nav>
+</header>
 
-    <main>
-        <h2>Popular Movies</h2>
+<h2>Top Movies</h2>
 
-        <div class="movie-grid">
+<div class="movie-grid">
 
-            <div class="movie-card">
-                <h3>Inception</h3>
-                <p>Sci-Fi • 2010</p>
-            </div>
-
-            <div class="movie-card">
-                <h3>Interstellar</h3>
-                <p>Sci-Fi • 2014</p>
-            </div>
-
-            <div class="movie-card">
-                <h3>The Dark Knight</h3>
-                <p>Action • 2008</p>
-            </div>
-
-            <div class="movie-card">
-                <h3>Avatar</h3>
-                <p>Adventure • 2009</p>
-            </div>
-
+    <div class="movie-card">
+        <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=600" alt="Interstellar">
+        <div class="movie-info">
+            <h3>Interstellar</h3>
+            <p>Sci-Fi • 2014</p>
+            <p class="rating">⭐ 8.7/10</p>
         </div>
-    </main>
+    </div>
 
+    <div class="movie-card">
+        <img src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=600" alt="Inception">
+        <div class="movie-info">
+            <h3>Inception</h3>
+            <p>Sci-Fi • 2010</p>
+            <p class="rating">⭐ 8.8/10</p>
+        </div>
+    </div>
+
+    <div class="movie-card">
+        <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=600" alt="The Dark Knight">
+        <div class="movie-info">
+            <h3>The Dark Knight</h3>
+            <p>Action • 2008</p>
+            <p class="rating">⭐ 9.0/10</p>
+        </div>
+    </div>
+
+    <div class="movie-card">
+        <img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=600" alt="Oppenheimer">
+        <div class="movie-info">
+            <h3>Oppenheimer</h3>
+            <p>Drama • 2023</p>
+            <p class="rating">⭐ 8.3/10</p>
+        </div>
+    </div>
+
+    <div class="movie-card">
+        <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?w=600" alt="Dune">
+        <div class="movie-info">
+            <h3>Dune</h3>
+            <p>Sci-Fi • 2021</p>
+            <p class="rating">⭐ 8.0/10</p>
+        </div>
+    </div>
+
+    <div class="movie-card">
+        <img src="https://images.unsplash.com/photo-1513106580091-1d82408b8cd6?w=600" alt="Avengers Endgame">
+        <div class="movie-info">
+            <h3>Avengers: Endgame</h3>
+            <p>Action • 2019</p>
+            <p class="rating">⭐ 8.4/10</p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
 </body>
 </html>
